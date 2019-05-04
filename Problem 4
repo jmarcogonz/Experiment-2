@@ -1,0 +1,30 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+	int fnum;
+	int snum;
+	int tnum;
+	
+	cout << "Enter First Number: ";
+	cin >> fnum;
+	cout << "Enter Second Number: ";
+	cin >> snum;
+	cout << "Enter Third Number: ";
+	cin >> tnum;
+	
+	if (fnum > snum && fnum > tnum)
+	cout << "The largest of the three numbers is " << fnum;
+	
+	if (snum > fnum && snum > tnum)
+	cout << "The largest of the three numbers is " << snum;
+	
+	if (tnum > fnum && tnum > snum)
+	cout << "The largest of the three numbers is " << tnum;
+	
+	return 0;
+}
