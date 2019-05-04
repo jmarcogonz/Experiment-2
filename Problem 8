@@ -1,0 +1,20 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+	int factor;
+	
+	cout << "Enter a Number: ";
+	cin >> factor;
+	
+	for (int i=1 ; i <= 10; i++)
+	
+	cout <<" \n "<< i << " * " << factor<< " = " << i*factor;
+	
+	return 0;
+	
+}
