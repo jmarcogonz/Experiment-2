@@ -1,0 +1,70 @@
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+
+{
+	double x;
+	double y;
+	double z; z = 2.5;
+	int xvalue;
+	
+	cout << "Enter '1' when x = 1 and 1 < y < 5" << "\n" << "Enter '2' when x = 1 and y >= 5" << "\n"<< "Enter '3' when x = 2 and y <= 5"
+	<< "\n"<< "Enter '4' when x = 2 and y > 5" << "\n"<< "Enter '5' for other values of x and y" << "\n";
+	
+	cout << "Enter a number: ";
+	cin >> xvalue;
+	
+	cout << "Enter y value: ";
+	cin >> y;
+	
+	switch(xvalue)
+	{
+		case 1:
+			if ( y > 1 && y < 5)
+			cout << "V = " << 1*y*z;
+			else
+			cout << "Invalid Number.";
+			break;
+		
+		case 2:
+			if ( y >= 5)
+			cout << "V = " << 1+(y/z);
+			else
+			cout << "Invalid Number.";
+			break;
+			
+		case 3:
+			if ( y <=5 )
+			cout << "V = " << abs((2-y)/z);
+			else
+			cout << "Invalid Number.";
+			break;
+		
+		case 4:
+			if ( y > 5)
+			cout << "V = " << 2 - sqrt(y+z);
+			else
+			cout << "Invalid Number.";
+			break;
+			
+		case 5:
+			{
+				cout << "Enter x value: ";
+				cin >> x;
+				{
+					if (x != 1 && x != 2)
+					cout << "V = " << x+y+z;
+					else
+					cout << "Invalid Number.";
+					break;
+				}
+			}
+			default:
+				cout << "Invalid Number.";		
+	}
+	return 0;
+}
