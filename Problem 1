@@ -1,0 +1,46 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+	int packageA; packageA = 995;
+	int packageB; packageB = 1495;
+	int packageC; packageC = 1995;
+	int package;
+	int hours;
+	
+	cout << "Enter '1' for Package A, '2' for Package B and '3' for Package C ";
+	cout << "\n" << "Enter a number: ";
+	cin >> package;
+	cout << "Enter number of hours used: ";
+	cin >> hours;
+	
+	switch(package)
+	{
+	case 1:
+		if (hours > 0 && hours <= 10)
+		cout << "Package A: Php " << packageA << " is your monthly due.";
+		else if (hours > 10)
+		cout << "Package A: Php " << (((hours - 10) * 20) + 995) << " is your monthly due.";
+		break;
+	
+	case 2:
+		if (hours > 0 && hours <= 20)
+		cout << "Package B: Php " << packageB << " is your monthly due.";
+		else if (hours > 20)
+		cout << "Package A: Php " << (((hours - 20) * 10) + 1495) << " is your monthly due.";
+		break;
+		
+	case 3:
+		cout << "Package C: Php " << packageC << " is your monthly due.";
+		break;
+		
+		default:
+			cout << "Invalid Number.";
+			
+	}	
+	return 0;
+}
