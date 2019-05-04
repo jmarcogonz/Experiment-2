@@ -1,0 +1,25 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+	int bill; bill = 35;
+	int gallon;
+	double charge; charge = 1.10;
+	int ubalance;
+	
+	cout << "Enter gallon consumption: ";
+	cin >> gallon;
+	cout << "Enter unpaid balance: Php ";
+	cin >> ubalance;
+	
+	if (ubalance == 0)
+	cout << "Your water bill is Php " << gallon*charge + bill;
+	else 
+	cout << "Your water bill is Php " << ((gallon*charge)+bill+ubalance+20);
+	
+	return 0;
+}
